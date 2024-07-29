@@ -26,7 +26,7 @@ import java.util.List;
  * @since 2022-12-06
  */
 @RestController
-@RequestMapping("/staff/role")
+@RequestMapping("/employee/role")
 @CrossOrigin
 public class RoleController {
     @Autowired

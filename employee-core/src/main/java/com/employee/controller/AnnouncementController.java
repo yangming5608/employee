@@ -25,7 +25,7 @@ import java.util.List;
  * @since 2022-12-14
  */
 @RestController
-@RequestMapping("/staff/announcement")
+@RequestMapping("/employee/announcement")
 @CrossOrigin
 public class AnnouncementController {
     @Autowired

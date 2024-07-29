@@ -26,7 +26,7 @@ import java.util.List;
  * @since 2022-12-14
  */
 @RestController
-@RequestMapping("/staff/contract")
+@RequestMapping("/employee/contract")
 @CrossOrigin
 public class ContractController {
     @Autowired

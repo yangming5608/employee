@@ -5,14 +5,14 @@ export default {
     //1.（查询分页）
     getAnnouncementListPage(current, limit, announcementQueryVo) {
       return request({
-        url: `/staff/announcement/listPage/${current}/${limit}`,
+        url: `/employee/announcement/listPage/${current}/${limit}`,
         method: "post",
         data: announcementQueryVo
       })
     },
     getAnnouncementListPageClerk(current, limit, announcementQueryVo) {
         return request({
-          url: `/staff/announcement/listPageClerk/${current}/${limit}`,
+          url: `/employee/announcement/listPageClerk/${current}/${limit}`,
           method: "post",
           data: announcementQueryVo
         })
@@ -20,14 +20,14 @@ export default {
     //2.删除
     deleteAnnouncementById(id) {
       return request({
-        url: `/staff/announcement/${id}`,
+        url: `/employee/announcement/${id}`,
         method: "delete"
       })
     },
     //3.添加
     addAnnouncement(announcement) {
       return request({
-        url: `/staff/announcement`,
+        url: `/employee/announcement`,
         method: "post",
         data: announcement
       })
@@ -35,14 +35,14 @@ export default {
     //4.根据id查询
     getAnnouncementById(id) {
       return request({
-        url: `/staff/announcement/${id}`,
+        url: `/employee/announcement/${id}`,
         method: "get"
       })
     },
     //修改
     updateAnnouncement(announcement) {
       return request({
-        url: `/staff/announcement`,
+        url: `/employee/announcement`,
         method: "put",
         data: announcement
       })
@@ -50,16 +50,16 @@ export default {
     //查询所有
     getAnnouncementList() {
         return request({
-          url: `/staff/announcement/list`,
+          url: `/employee/announcement/list`,
           method: "get"
         })
       },
       //查询首页信息
       numInfo() {
         return request({
-          url: `/staff/announcement/numInfo`,
+          url: `/employee/announcement/numInfo`,
           method: "get"
         })
       },
   }
-  
+

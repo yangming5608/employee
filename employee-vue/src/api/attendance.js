@@ -5,14 +5,14 @@ export default {
   //1.（查询分页）
   getAttendanceListPage(current, limit, attendanceQueryVo) {
     return request({
-      url: `/staff/attendance/listPage/${current}/${limit}`,
+      url: `/employee/attendance/listPage/${current}/${limit}`,
       method: "post",
       data: attendanceQueryVo
     })
   },
   getAttendance(current, limit, attendanceQueryVo) {
     return request({
-      url: `/staff/attendance/getAttendance/${current}/${limit}`,
+      url: `/employee/attendance/getAttendance/${current}/${limit}`,
       method: "post",
       data: attendanceQueryVo
     })
@@ -20,14 +20,14 @@ export default {
   //2.删除
   deleteAttendanceById(id) {
     return request({
-      url: `/staff/attendance/${id}`,
+      url: `/employee/attendance/${id}`,
       method: "delete"
     })
   },
   //3.添加
   addAttendance(attendance) {
     return request({
-      url: `/staff/attendance`,
+      url: `/employee/attendance`,
       method: "post",
       data: attendance
     })
@@ -35,14 +35,14 @@ export default {
   //4.根据id查询
   getAttendanceById(id) {
     return request({
-      url: `/staff/attendance/${id}`,
+      url: `/employee/attendance/${id}`,
       method: "get"
     })
   },
   //修改
   updateAttendance(attendance) {
     return request({
-      url: `/staff/attendance`,
+      url: `/employee/attendance`,
       method: "put",
       data: attendance
     })
@@ -50,21 +50,21 @@ export default {
   //查询所有
   getAttendanceList() {
     return request({
-      url: `/staff/attendance/list`,
+      url: `/employee/attendance/list`,
       method: "get"
     })
   },
   //审核通过
   updateAttendanceOk(id) {
     return request({
-      url: `/staff/attendance/updateAttendanceOk/${id}`,
+      url: `/employee/attendance/updateAttendanceOk/${id}`,
       method: "put"
     })
   },
   //不通过
   updateAttendanceNo(id) {
     return request({
-      url: `/staff/attendance/updateAttendanceNo/${id}`,
+      url: `/employee/attendance/updateAttendanceNo/${id}`,
       method: "put"
     })
   },

@@ -29,7 +29,7 @@ import java.util.List;
  * @since 2022-12-14
  */
 @RestController
-@RequestMapping("/staff/clerk")
+@RequestMapping("/employee/clerk")
 @CrossOrigin
 public class ClerkController {
     @Autowired

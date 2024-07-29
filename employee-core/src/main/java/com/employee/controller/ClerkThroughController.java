@@ -25,7 +25,7 @@ import java.util.List;
  * @since 2022-12-14
  */
 @RestController
-@RequestMapping("/staff/clerk_through")
+@RequestMapping("/employee/clerk_through")
 @CrossOrigin
 public class ClerkThroughController {
     @Autowired

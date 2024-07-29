@@ -28,7 +28,7 @@ import java.util.List;
  * @since 2022-12-06
  */
 @RestController
-@RequestMapping("/staff/user")
+@RequestMapping("/employee/user")
 @CrossOrigin
 public class UserController {
     @Autowired

@@ -26,7 +26,7 @@ import java.util.List;
  * @since 2022-12-14
  */
 @RestController
-@RequestMapping("/staff/rewards_punishments")
+@RequestMapping("/employee/rewards_punishments")
 @CrossOrigin
 public class RewardsPunishmentsController {
     @Autowired

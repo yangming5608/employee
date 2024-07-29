@@ -25,7 +25,7 @@ import java.util.List;
  * @since 2022-12-14
  */
 @RestController
-@RequestMapping("/staff/department")
+@RequestMapping("/employee/department")
 @CrossOrigin
 public class DepartmentController {
     @Autowired
